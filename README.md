@@ -14,7 +14,7 @@ The page functions the same as it did before -- simply displaying some basic inf
 
 Screenshots: Two versions (differing widths) contained within '/assets/my-mockup' folder.
 
-Link to live site: 
+Link to live site: https://tjr1387.github.io/homework-week-01
 
 ## Credits
 
