@@ -7,28 +7,28 @@
 body {
     background-color: #d9dcd6;
 }
-/* i dont think i need to mess with anything above this comment, it seems fine */
-/* TONS of redundancies here so im going to need to consolidate groups of things into one section that have saem stlying */
 
-/* this should be the 'tag' selector for header, not a div class (and reflect that in the HTML) */
-.header {
+/* Begin 'header' related styling */
+/* ------------------------------ */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* this can just be 'seo' class; theres no other thing with this class in the HTML */
-.header h1 .seo {
+/* this can just be 'seo' class; theres nothing else with this class in the HTML */
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* gave the nav a class to shrink selector chaining (not really necessary though!) */
+.nav-bar {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -36,19 +36,33 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.nav-bar ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.nav-bar ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* I'm torn about putting this is the 'header' section -- as it's so broad -- but for this site, it's the only place with 'a' tags */
 a {
     color: #ffffff;
     text-decoration: none;
 }
+
+/* added this for UX improvement -- my concern is the company may not want me freelancing, esp. on the color choice */
+a:hover {
+    color: rgb(241, 255, 110);
+    font-size: 21px;
+}
+
+/* -------------------------------- */
+/*  END of 'header' related styling */
+
+
+
+
 
 p {
     font-size: 16px;
@@ -211,13 +225,17 @@ p {
 /* end of 3-chunks -- the footer is mostly fine, you know, once i give it a footer tag instead of class! */
 /* shout-out to 'trebuchet'; one of, if not my favorite font-family */
 
-.footer {
+/* Begin 'footer' related styling (to end) */
+/* --------------------------------------- */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* Added a _bit_ of padding because the 'h3' and the 'p' looked a bit cramped */
+footer h3 {
     font-size: 20px;
+    padding-bottom: 5px;
 }
