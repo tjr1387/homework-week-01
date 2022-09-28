@@ -12,7 +12,7 @@ N/A
 
 The page functions the same as it did before -- simply displaying some basic information about this company in a pleasant layout. The three links in the header will jump down to their respective categories' content.
 
-Screenshots: Two versions (differing widths) contained within 'my-mockup' folder.
+Screenshots: Two versions (differing widths) contained within '/assets/my-mockup' folder.
 
 Link to live site: 
 

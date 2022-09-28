@@ -1,4 +1,5 @@
-/* This styling is not set up for narrow screens, but considering we didn't cover flex and mobile responsiveness in week one, I'm hoping it's okay to leave it that way */
+/* This styling is not set up for narrow screens, but considering we didn't cover flex or mobile responsiveness in week one, I'm hoping it's okay to leave it that way */
+/* Also, shout-out to 'gill sans' and 'trebuchet' -- two of my favorite fonts! */
 
 * {
     box-sizing: border-box;
@@ -10,7 +11,6 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Shout-out to 'gill sans' and 'trebuchet' -- two of my favorite fonts! */
 
 /* Begin 'header' related styling */
 /* ------------------------------ */
@@ -26,12 +26,12 @@ h1 {
     font-size: 48px;
 }
 
-/* this can just be 'seo' class; theres nothing else with this class in the HTML */
+/* This can just be 'seo' class; theres nothing else with this class in the HTML */
 .seo {
     color: #d9dcd6;
 }
 
-/* gave the nav a class to shrink selector chaining (not really necessary though!) */
+/* Gave the 'nav' a class to shrink selector chaining (not really necessary though!) */
 .nav-bar {
     padding-top: 15px;
     margin-right: 20px;
@@ -55,7 +55,7 @@ a {
     text-decoration: none;
 }
 
-/* added this for UX improvement -- my concern is the company may not want me freelancing, esp. on the color choice */
+/* Added this for a tiny UX improvement -- my concern is the company may not want me freelancing, esp. on the color choice! */
 a:hover {
     color: rgb(241, 255, 110);
     font-size: 21px;
@@ -63,13 +63,17 @@ a:hover {
 /* -------------------------------- */
 /*  END of 'header' related styling */
 
+
+/* Begin the 'main' element styling */
+/* -------------------------------- */
+
 p {
     font-size: 16px;
 }
 
-/* an issue with taking the 'url' out of this and putting into the HTML, I can't get it to chop off the top bit of the picture -- to be continued.. */
+/* Height of the following was 800px, but when moving the URL from CSS to HTML, the dimensions became warped -- this seems to work fine now but I'm not 100% confident */
 .hero img {
-    height: 100%; /* was 800px, but with the url moved from CSS to HTML, this warped the dimensions */
+    height: 100%;
     width: 100%;
     margin-bottom: 25px;
     background-size: cover;
@@ -158,6 +162,8 @@ p {
 }
 /* --------------------------------- */
 /* END of 'benefits' section styling */
+/* ----------------------------- */
+/* END of 'main' element stlying */
 
 
 /* Begin 'footer' related styling (to end) */
